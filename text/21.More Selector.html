@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box + p{
+            color:red;
+        }
+        div[class~="inner"]{
+            background: grey;
+        }
+        .txt{
+            color: white;
+        }
+        a[title="link1"]{
+            color: orange;
+        }
+        a[href$="g"]{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+   <h1>More Selector Properties</h1> 
+   <div class="box">
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+   </div>
+   <div class="inner txt">
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+    <P>Lorem ipsum dolor sit amet.</P>
+   </div>
+   <div id="first">This is div</div>
+   <P>Lorem ipsum dolor sit amet.</P>
+   <P>Lorem ipsum dolor sit amet.</P>
+   <P>Lorem ipsum dolor sit amet.</P>
+   <a href="test.html" title="link1">Link-1</a>
+   <a href="test.pdf" title="link2">Link-2</a>
+   <a href="test.png" title="link3">Link-3</a>
+   <a href="#" title="link4">Link-4</a>
+    
+</body>
+</html>
