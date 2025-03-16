@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: g reen;
+        }
+        #d1{
+            background-color:skyblue ;
+        }
+        #d2{
+            background-color: slateblue;
+        }
+        #d1 :is(h2,h3,h4){
+            color: blue;
+        }
+        #d1 h2,#d2 h2{
+            color: blueviolet;
+        }
+        :is(#d1,#d2) h2{
+            color: green;
+        }
+
+        :is(#d1,#d2) h2{
+            color: greenyellow;
+        }
+
+        :is(#d1,#d2) :is(h2,p){
+            color: hotpink;
+        }
+
+        :is(#d1,#d2) h2:hover{
+            color: rgb(35, 161, 1);
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>55.Pseudo :is()</h1>
+    <div id="d1">
+        <h2>h2</h2>
+        <h3>h3</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, nesciunt!</p>
+        <H4>H4</H4>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, in!</P>
+    </div>
+        <hr>
+    <div id="d2">
+        <h2>h2</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: rgb(43, 190, 58);
+            color: white;
+            width: 300px;
+            height: 100px;
+            text-align: center;
+            padding-top: 25px;
+            
+            position: relative;
+        }
+        .box::before{
+            content: '';
+            width: 300px;
+            height: 20px;
+            background-color: rgb(143, 127, 127);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .box::after{
+            content: '';
+            width: 300px;
+            height: 20px;
+            background-color: rgb(10, 152, 241);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        p::first-letter{
+            font-size: larger;
+            font-weight: bolder;
+            color: green;
+        }
+        p::first-line{
+            color: hotpink;
+        }
+        p::selection{
+            background-color: gray;
+            color: red;
+        }
+        input::placeholder{
+            color: rgb(255, 0, 208);
+        }
+    </style>
+</head>
+<body>
+    <h1>56.Pseudo element</h1>
+    <!-- 
+    ::before
+    ::after
+    ::first-letter
+    ::first-line
+    ::selection
+    ::placeholder
+    -->
+    <div class="box">
+        Pseudo element
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse optio consequuntur ullam labore totam asperiores quod doloremque distinctio placeat libero, exercitationem sequi incidunt nihil saepe?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, voluptates.</p>
+    <input type="text" placeholder="Enter Name">
+</body>
+</html>
