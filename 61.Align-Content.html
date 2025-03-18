@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            margin: 5px;
+            width: 400px;
+            height: 300px;
+            border-radius: 5px;
+            border: 2px solid grey;
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+           /*stretch, flex-start , flex-end,center,space-around,space-between */
+            align-content: space-around;
+        }
+        .box{
+            background-color: red;
+            padding: 20px;
+            margin: 5px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>61.Align-Content</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
