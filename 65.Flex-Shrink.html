@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            align-items: center;
+            
+            border-radius: 5px;
+            border: 3px solid black;
+            width: 600px;
+            padding: 0;
+            display: flex;
+           
+              
+        }
+
+       
+        .box{
+            font-size: larger;
+            width: 200px;
+            margin: 5px;
+            background-color: orangered;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            flex-shrink: 1;
+            text-align: center;
+        }
+        
+        .box:nth-child(2){
+            flex-shrink: 2;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>65.Flex-Shirnk</h1>
+    <div class="container">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+    </div>
+</body>
+</html>
