@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>67-Simple Navigation Bar using Flex box in CSS</title>
+ <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 10%;
+        background: grey;
+        border-radius: 10px;
+    }
+    .logo{
+        cursor: pointer;
+        color: white;
+        font-weight: 400;
+        /* margin-right: auto; */
+        /* order: 3; */
+
+    }
+
+    .nav-link{
+        list-style: none;
+        display: flex;
+    }
+
+    .nav-link li a{
+        color: white;
+        text-decoration: none;
+
+    }
+
+    .nav-link li{
+        padding: 0 20px;
+    }
+
+    .nav-link li a:hover{
+        color: rgb(57, 176, 223);
+    }
+
+    button{
+        border-radius: 25px;
+        padding:  9px 25px;
+        border: none;
+        color: white;
+        background:rgb(73, 203, 255);
+        transform: 0.3s;
+        
+        
+    }
+    button:hover{
+        background: rgb(170, 158, 246);
+    }
+    
+
+ </style>
+</head>
+<body>
+    <header>
+        <h2 class="logo">Navigation Bar</h2>
+        <nav>
+        <ul class="nav-link">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Service</a></li>
+        </ul>
+    </nav>
+        <button>Count Us</button>
+    </header>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>68-Menu</title>
+     <link rel="stylesheet" href="Menu.css">
+ <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    body{
+        background-color: gray;
+    }
+    nav{
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    nav ul{
+        display: inline-block;
+        list-style: none;
+        transform: skew(-25deg);
+    }
+
+    nav ul li {
+        background-color: white;
+        float: left;
+        border-right:1px solid white ;
+        box-shadow: 1.95px 2.6px black;
+        text-transform: uppercase;
+        color: rgb(42, 142, 249);
+        
+        transition: all 0.2s linear;
+    }
+
+    nav ul li:hover{
+        background-color: rgb(38, 185, 244);
+        color: white;
+    }
+
+    a{
+        color: inherit;
+        display: block;
+        padding: 10px 20px;
+        text-decoration: none;
+        transform: skew(25deg);
+        font-weight:bold;
+        }
+
+    nav ul li:first-child{
+        border-radius: 7px 0 0 7px;
+    }
+    nav ul li:last-child{
+        border-radius: 0 7px 7px 0;
+    }
+
+    
+
+
+ </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">download's</a></li>
+            <li><a href="#">Contacu us</a></li>
+        </ul>
+    </nav>
+      
+
+</body>
+</html>

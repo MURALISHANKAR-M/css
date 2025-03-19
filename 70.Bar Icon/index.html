@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70.Responsive Bar Icon</title>
+    
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:gray ;
+    color: aliceblue;
+    border-radius: 10px;
+}
+
+.logo{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 8px;
+    color: rgb(3, 13, 17);
+}
+
+.navbar-links ul{
+    display: flex;
+}
+
+.navbar-links ul li {
+    list-style: none;
+    
+}
+
+.navbar-links ul li a{
+    color: azure;
+    text-decoration: none;
+    padding: 16px;
+    display: block;
+}
+
+.navbar-links ul li:hover{
+    background-color: skyblue;
+    border-radius: 5px;
+}
+
+.btn{
+     
+    position: absolute;
+    top:16px;
+    right: 16px;
+    width: 30px;
+    height: 21px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bar{
+    height: 3px;
+    width: 100%;
+    background-color: white;
+}
+
+@media (max-width:600px){
+    .btn {
+        display:flex ;
+    }
+    .navbar-links{
+        /* display: none; */
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-links ul li{
+        text-align: center;
+    }
+    .navbar-links.active{
+        display: flex;
+    }
+}
+
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo"><h2>70-Bar Icon</h2></div>
+        <a href="#" class="btn">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js">
+
+
+    </script>
+</body>
+</html>
