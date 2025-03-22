@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom,teal, skyblue);
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+
+}
+
+.btn{
+    padding: 15px 0;
+    width: 200px;
+    height: 50px;
+    margin-top: 400px;
+    border-radius: 5px;
+    border: 1px solid greenyellow;
+    background: transparent;
+    color:  greenyellow;
+    cursor: pointer;
+    position: relative;
+    
+}
+
+.layer{
+    background-color:  greenyellow;
+    height: 100%;
+    width: 0%;
+    border-radius: 5px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+    
+    
+}
+
+.btn:hover .layer{
+    width: 100%;
+}
