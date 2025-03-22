@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(
+    to right bottom,
+    hotpink,
+    teal,
+    limegreen,
+    skyblue
+  );
+  background-size: 400% 400%;
+  animation: animateBg 2s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes animateBg {
+  0% {
+    background-position: 0%;
+  }
+  50% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0%;
+  }
+}
+
+.card {
+  text-align: center;
+  padding: 10px;
+  width: 400px;
+  height: 200px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+  line-height: 90px;
+  color: rgb(246, 69, 157);
+}
