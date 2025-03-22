@@ -39,17 +39,20 @@ body{
 }
 
 .form-group .btn{
+
     position: absolute;
     z-index: 1;
     top:0;
     right: 0;
-    width: 60px;
+    width: 40px;
     height: 100%;
     cursor: pointer;
     border: none;
     background-color: hotpink;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(251, 251, 251);
+    
+    
 }
 
 .form-group .btn:hover{
